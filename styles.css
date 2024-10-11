@@ -1,0 +1,136 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f0f0f;
+    color: #ffffff;
+}
+
+.hero-section {
+    height: 60vh;
+    background-image: url('https://source.unsplash.com/random/1920x1080/?movie');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.content-wrapper {
+    padding: 50px 20px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #e50914;
+}
+
+.movie-section {
+    margin-bottom: 60px;
+}
+
+.slider {
+    margin-bottom: 40px;
+}
+
+.slick-slide {
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.slick-slide:hover {
+    transform: scale(1.05);
+}
+
+.slick-prev, .slick-next {
+    z-index: 1;
+}
+
+.slick-prev {
+    left: -30px;
+}
+
+.slick-next {
+    right: -30px;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #e50914;
+    font-size: 30px;
+}
+
+.slick-dots li button:before {
+    color: #e50914;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #ffffff;
+}
+.movie-item a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.movie-item a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+.search-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(44, 44, 44, 0.8);
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-container input {
+    flex: 1 1 80%;
+    margin-right: 10px;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border-radius: 30px;
+}
+
+.search-container input::placeholder {
+    color: #b3b3b3;
+}
+
+.search-container button {
+    white-space: nowrap;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #e50914;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+    background-color: #f40612;
+}
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinematic Hub - Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <header class="hero-section" id="details-hero">
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <h1 class="display-3 fw-bold text-white mb-4" id="title"></h1>
+                <p class="lead text-white" id="tagline"></p>
+            </div>
+        </header>
+
+        <main class="content-wrapper">
+            <div class="row">
+                <div class="col-md-12 mb-4">
+                    <div id="video-player" class="ratio ratio-16x9">
+                        <!-- Video player will be inserted here -->
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img id="poster" src="" alt="Poster" class="img-fluid rounded">
+                    <button id="play-button" class="btn btn-primary mt-3 w-100">Play</button>
+                </div>
+                <div class="col-md-8">
+                    <h2 class="section-title">Overview</h2>
+                    <p id="overview"></p>
+                    <div id="movie-details">
+                        <p><strong>Release Date:</strong> <span id="release-date"></span></p>
+                        <p><strong>Runtime:</strong> <span id="runtime"></span></p>
+                        <p><strong>Genres:</strong> <span id="genres"></span></p>
+                    </div>
+                    <div id="tv-details">
+                        <p><strong>First Air Date:</strong> <span id="first-air-date"></span></p>
+                        <p><strong>Number of Seasons:</strong> <span id="number-of-seasons"></span></p>
+                        <p><strong>Number of Episodes:</strong> <span id="number-of-episodes"></span></p>
+                    </div>
+                </div>
+            </div>
+
+            <section id="episodes" class="movie-section">
+                <h2 class="section-title">Episodes</h2>
+                <div id="seasons-dropdown" class="mb-4"></div>
+                <div id="episodes-list" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"></div>
+            </section>
+
+            <section id="similar" class="movie-section">
+                <h2 class="section-title">Similar Titles</h2>
+                <div class="slider"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="details.js"></script>
+</body>
+</html>
